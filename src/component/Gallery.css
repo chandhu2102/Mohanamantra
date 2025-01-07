@@ -1,0 +1,161 @@
+.gallery {
+  position: relative;
+  background-color: #d9d9d9;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.31rem;
+  color: #080808;
+  font-family: "Mabry Pro black";
+}
+
+.register-gallery {
+  color: #080808;
+  font-family: "Mabry pro black";
+  font-size: 21px;
+}
+
+.gallery-child {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 50px;
+  background-color: #d9d9d9;
+  border: 2px solid #080808;
+  box-sizing: border-box;
+  width: 8%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-div-gallery {
+  width: 100%;
+  height: 12%;
+}
+
+.gallery1 {
+  position: relative;
+  font-family: "Mabry Pro black";
+  text-align: center;
+  text-underline-position: 1px;
+  color: #080808;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -3.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: underline;
+  letter-spacing: -3.2px;
+  text-decoration-thickness: 3px;
+}
+
+.gallery-inner {
+  position: relative;
+  border-top: 0.4px solid #080808;
+  box-sizing: border-box;
+  width: 15%;
+  height: 0.3rem;
+}
+
+.rectangle-div-gallery {
+  position: relative;
+  top: 3rem;
+  left: 0;
+  background-color: #080808;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vuesaxlineararrow-square-rig-icon {
+  position: absolute;
+  left: 1.5rem;
+  width: 2.69rem;
+  height: 2.69rem;
+  rotate: 180deg;
+  transition: none;
+  z-index: 1;
+}
+
+.vuesaxlineararrow-square-rig-icon1 {
+  position: absolute;
+  right: 1.5rem;
+  width: 2.69rem;
+  height: 2.69rem;
+  transition: none;
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  flex-shrink: 0;
+  object-fit: fill;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1300px) {
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    flex-shrink: 0;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 900px) {
+  .register-div-gallery {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-image {
+    width: 100%;
+    height: 60%;
+    transition: transform 0.5s ease-in-out;
+    flex-shrink: 0;
+    object-fit: fill;
+  }
+}

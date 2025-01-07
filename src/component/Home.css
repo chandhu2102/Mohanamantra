@@ -1,0 +1,43 @@
+/* Existing styles for .home and .mohanamantra23 */
+.home {
+  position: relative;
+  background-color: #090909;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 1.31rem;
+  color: #fff;
+  font-family: "Mabry Pro";
+}
+
+.mohanamantra23 {
+  position: relative;
+  font-weight: 900;
+}
+
+/* New styles for .earth-container and .earth-image */
+
+.earth-container {
+  position: absolute;
+  left: 0;
+  transform: translate(-40%,-50%);
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+
+.earth-image {
+  position: relative;
+  left: 0;
+  width: 80%;
+  animation: rotateEarth 20s linear infinite;
+
+  }
+
+  @keyframes rotateEarth {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

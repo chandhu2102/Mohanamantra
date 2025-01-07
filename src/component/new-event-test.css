@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Manrope:wght@600&family=Poppins:wght@400;500;600&display=swap");
+
+.team-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-team-1 {
+  background: #090909;
+}
+/* CSS for the slide-in panel */
+.slide-in-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+.slide-in-panel.show {
+  transform: translateX(0);
+}
+.bottomitem {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+.bottommain {
+  display: flex;
+  justify-content: space-around;
+}
+.disp {
+  color: #f8593b;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-decoration: line-through;
+}
+.bttnn {
+  display: flex;
+  align-items: center;
+}
+.eventreg-event {
+  padding: 12px 16px;
+  background: #16161600;
+  border-radius: 6px;
+  color: black;
+  border: 2px solid black;
+  font-family: "Manrope";
+  /* margin-right: 20px; */
+}
+.realp {
+  font-family: "Roboto";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 96.154% */
+}
+.team-heading-1 {
+  padding-left: 20%;
+
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: calc(3vw + 15px);
+  font-family: "Mabry Pro light";
+}
+.regbutton {
+  display: flex;
+  justify-content: flex-end;
+}
+.profile-1 {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px;
+  width: 350px;
+  background: #fff;
+}
+
+.buttons-container-2.expanded {
+  width: 75%;
+  transition: width 0.5s ease-out;
+}
+.earth-event {
+  width: 20vw;
+}
+.profile-image-1 {
+  width: 100%;
+
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-1 img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.profile-username-2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: "Roboto";
+  color: black;
+
+  font-size: 26px;
+}
+.disp1{
+  font-size: 26px;
+  color:black;
+  font-family: "Roboto";
+}
+.maineventform{
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  height: -webkit-fill-available;
+  background: #d9d9d9;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 550px;
+  align-items: center;
+}
+
+
+
+.payment-form-event {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-member-button {
+  border-radius: 20px;
+  
+  background: #d9d9d9;
+
+}
+.close-button-event {
+  background: #ffffff00;
+  font-size: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(7vh, 15vh);
+}
+
+.registration-form-event {
+  width: 312px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px 0;
+
+}
+.registration-form-event input {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #090909;
+  background: rgba(255, 255, 255, 0.08);
+  width: 275px;
+  text-decoration: none;
+
+  height: 35px;
+
+}
+.remove-member-button {
+  border-radius: 20px;
+
+  background: #d9d9d9;
+
+
+}
+.profile-user-handle-2 {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  position: relative;
+  /* text-align: left; */
+  line-height: 30px;
+  font-family: "Manrope";
+}
+
+.septag {
+  width: 100%;
+}
+.leftearth-1 {
+  width: 20vw;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-actions-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons-container-2.expanded {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+  position: fixed;
+  bottom: 0;
+  /* top: 0; */
+  z-index: 1;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.buttons-container-2.expanded button {
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 10px;
+}
+.rules-container{
+
+    text-align: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    padding: 0 82px;
+    overflow: auto;
+
+}
+
+
+.rules-container h1{
+  margin: 0;
+    transform: translateX(18px);
+    color: #090909;
+font-family: 'Roboto';
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.workshopscroll{
+  overflow: auto;
+  height: auto;
+}
+.button-div {
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px white solid;
+  width: 75%;
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+.pforli{
+font-family: 'Poppins';
+}
+.buttons-container-2.expanded .svg-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  width: calc(2vw + 5px);
+}
+
+.svg-icon {
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+  width: 10%;
+  width: calc(6vw + 5px);
+  transition: transform 0.6s ease;
+}
+
+.button-main {
+  color: #fff;
+
+  font-size: calc(6vw + 5px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  font-family: "Mabry Pro black";
+}
+.buttons-container-2.expanded .button-main {
+  font-size: calc(1vw + 16px);
+}
+.button-main .expanded {
+  color: #fff;
+  font-family: Inter (woff2), sans-serif;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+}
+.mmbar1 {
+  position: fixed;
+  height: 50vh;
+  right: 1rem;
+  transform: translate(-100%, 40%);
+}
+.eventreg-2 {
+  padding: 12px 16px;
+  background: #16161600;
+  border-radius: 6px;
+  color: black;
+  border: 2px solid black;
+  font-family: "Manrope";
+  margin-right: 20px;
+}
+
+.eventreg-2:hover {
+  background-color: #1849a500;
+}
+.eventreg-2:active {
+  background-color: #0059fd00;
+}
+.profile-user-handle-1 {
+  font-size: 1.2rem;
+  color: #dbece3;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  position: relative;
+  text-align: left;
+}
+.bullet::before {
+  content: '\2022';
+  color: #000000; 
+  font-size: 1.5em;
+  line-height: 0; 
+  margin-right: 0.5em; 
+}
+.eventdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-proshow-1 {
+  margin-top: 15px;
+  gap: 10px;
+  display: flex;
+}
+.eventdetails > ul > li {
+  list-style: none;
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+}
+.eventrule-pop{
+  color: #090909;
+font-family: 'Poppins';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.profile-actions-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-1 {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primary-1 {
+  background-color: #03a8f400;
+  color: #fff;
+}
+
+.btn--primary-1:hover {
+  background-color: #0289d100;
+}
+
+.event-details h1 {
+  font-size: 20px;
+  width: 121px;
+  background: #002362;
+  padding: 15px;
+  margin: 0;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-family: "Manrope";
+  color: white;
+}
+
+.profiles-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 20%;
+  padding-bottom: 5%;
+  gap: 50px;
+}
+
+.btn--icon-1 {
+  background-color: transparent;
+  color: #999;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.btn--icon-1:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.eventname-pop{
+  color: #090909;
+font-family: 'Poppins';
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin: 0;
+padding: 0px 60px;
+
+
+}
+.close-button-event{
+  
+    background: #ffffff00;
+    font-size: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: translate(10vh, 15vh);
+
+
+}
+
+.link-1 {
+  color: #444;
+  margin-left: 0%;
+  margin-right: 10%;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link--icon-1 {
+  font-size: 1.5rem;
+}
+
+.link--icon:hover {
+  color: #03a9f4;
+}
+
+.hr-team {
+  margin-top: 2%;
+  height: 0px;
+}
+
+.buttons-container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 75%;
+  height: 100vh;
+  transition: all 0.5s ease-out;
+}
+
+/*
+.buttons-container-1 button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+*/
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 900px) {
+  .buttons-container-2.expanded .button-main {
+    font-size: calc(6vw + 5px);
+  }
+  .mmbar1 {
+    display: none;
+  }
+  .leftearth-1 {
+    display: none;
+  }
+  .button-div {
+    width: 80%;
+    position: relative;
+    height: 15vh;
+    top: 0;
+    bottom: 0;
+    line-height: 0;
+    padding-bottom: 0;
+  }
+  .buttons-container-2.expanded {
+    width: 100%;
+    position: relative;
+    height: 75vh;
+    top: 0;
+    bottom: 0;
+  }
+  .buttons-container-2.expanded .svg-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+    width: calc(6vw + 5px);
+  }
+  .buttons-container-2 {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  .team-heading-1 {
+    padding-left: 0;
+  }
+  .profiles-container-1 {
+    padding-left: 0;
+  }
+  .profile-1 {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .event-details {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .event-details h1 {
+    font-size: 20px;
+    width: 100%;
+    background: #002362;
+    padding: 4%;
+    margin: 0;
+    border-radius: 4px;
+    margin-right: 20px;
+    font-family: "Manrope";
+  }
+}
+@media (max-width:550px){
+  .payment-form-event {
+    width: 100%;
+}
+.rules-container {
+  text-align: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px;
+  overflow: auto;
+}
+.maineventform {
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  height: -webkit-fill-available;
+  background: #d9d9d9;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+}
+}
+
+@media (max-width:420px){
+  .profile-1 {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    background: #fff;
+}
+}

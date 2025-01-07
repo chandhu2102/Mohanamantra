@@ -1,0 +1,70 @@
+/* Loading.css */
+
+.loading-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #090909;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .earth-container {
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .earth-svg {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+  }
+  
+  .loading-text {
+   font-size: calc(1rem + 10px);
+    color: white;
+    font-family: 'mabry pro black';
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .loading-bar {
+    height: 4px;
+    background-color: #03a9f4;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    animation: loadingAnimation 6s linear infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .rotating-earth{
+    width: 100%;
+    max-width: 30%;
+  }
+  @media (max-width: 1200px) {
+    .rotating-earth{
+      width: 100%;
+      max-width: 45%;
+    }
+  }
+
+
+
+  @media (max-width: 767px) {
+  .rotating-earth{
+    width: 100%;
+    max-width: 55%;
+  }
+}
